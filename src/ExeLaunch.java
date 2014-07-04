@@ -13,13 +13,23 @@ import java.io.InputStreamReader;
  * @author developer
  */
 public class ExeLaunch {
-    public char parametro1, parametro2;
+    //public char parametro1, parametro2;
     
     public static void main(String[] args) {
         Runtime run = Runtime.getRuntime();
+        
+    /**
+     *
+     * @param parametro1
+     * @param parametro2
+     */
+    
+    }
+  public static void LanciaExe(String parametro1, String parametro2)
+        {
         try {
         
-            Process pp= new ProcessBuilder("c:\\APPLVS\\MBAfm\\win32\\RAXmlIssueLoader.exe", "parametro1", "parametro2").start();
+            Process pp= new ProcessBuilder("c:\\APPLVS\\MBAfm\\win32\\RAXmlIssueLoader.exe", parametro1, parametro2).start();
             BufferedReader in =new BufferedReader(new InputStreamReader(pp.getErrorStream()));
             String line;
             while ((line = in.readLine()) != null) {
@@ -31,7 +41,6 @@ public class ExeLaunch {
             e.printStackTrace();
             System.out.println(e.getMessage());
         }
-    }
-    
+        }  
     
 }
