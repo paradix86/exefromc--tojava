@@ -1,4 +1,4 @@
-exefromc--tojava
+exe from c++ to java library
 ================
 
 Java .lib for call c++ win32 .exe, private use for study.
