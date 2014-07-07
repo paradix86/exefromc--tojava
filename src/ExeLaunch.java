@@ -10,18 +10,17 @@ import java.io.InputStreamReader;
 
 /**
  *
- * @author developer
+ * @author A.codega
  */
 public class ExeLaunch {
-    //public char parametro1, parametro2;
     
     public static void main(String[] args) {
         Runtime run = Runtime.getRuntime();
         
     /**
-     *@param nomeexe name of the exe
-     * @param parametro1 parameter for cmd
-     * @param parametro2
+     * @param nomeexe name of the exe
+     * @param parametro1 parameter1 for cmd
+     * @param parametro2 parameter2 for cmd
      */
     
     }
