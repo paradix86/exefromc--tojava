@@ -19,17 +19,17 @@ public class ExeLaunch {
         Runtime run = Runtime.getRuntime();
         
     /**
-     *
-     * @param parametro1
+     *@param nomeexe name of the exe
+     * @param parametro1 parameter for cmd
      * @param parametro2
      */
     
     }
-  public static void LanciaExe(String parametro1, String parametro2)
+  public static void LanciaExe(String nomeexe, String parametro1, String parametro2)
         {
         try {
         
-            Process pp= new ProcessBuilder("c:\\APPLVS\\MBAfm\\win32\\RAXmlIssueLoader.exe", parametro1, parametro2).start();
+            Process pp= new ProcessBuilder(nomeexe, parametro1, parametro2).start();
             BufferedReader in =new BufferedReader(new InputStreamReader(pp.getErrorStream()));
             String line;
             while ((line = in.readLine()) != null) {
